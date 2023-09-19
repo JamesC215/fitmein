@@ -181,7 +181,7 @@ Also, using our base knowledge of Django/Python that we learned about in our cla
 
 ## Future Improvements
 - At the moment there’s a bug with the photo upload (it uploads to all users and once uploaded cannot be changed) and the comments are not linked to the profile for which they are added.
-- We would like the app show all the connections made and improve its social feature.
+- We would like the app to show all the connections made and improve its social feature.
 - We would like it to also be a place where, based on the user's location, fitness events in the area can be suggested.
-- We would like to add the possiblity to also find recipes and eating habits and suggestions to improve the user's health.
+- We would like to add functionality to also find recipes and eating habits and suggestions to improve the user's health.
 - We finally but not lastly would like to improve its style and UI/UX.
