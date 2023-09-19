@@ -14,16 +14,16 @@ During the planning we also decided that we would be working with a mix of pair/
 ## Technology Used
 
 <div align="left">
-	<code>HTML<img width="30" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/html-5.svg" alt="HTML" title="HTML"/></code>
-	<code>CSS<img width="30" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/css-3.svg" alt="CSS" title="CSS"/></code>
-	<code>Bootstrap<img width="40" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/bootstrap.svg" alt="Bootstrap" title="Bootstrap"/></code>
-	<code>JavaScript<img width="40" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/javascript.svg" alt="JavaScript" title="JavaScript"/></code>
-	<code>Python<img width="40" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/python.svg" alt="Python" title="Python"/></code>
-  <code>Django<img width="30" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/django.svg" alt="Django" title="Django"/></code>
+	<code><img width="30" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/html-5.svg" alt="HTML" title="HTML"/></code>
+	<code><img width="30" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/css-3.svg" alt="CSS" title="CSS"/></code>
+	<code><img width="40" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/bootstrap.svg" alt="Bootstrap" title="Bootstrap"/></code>
+	<code><img width="40" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/javascript.svg" alt="JavaScript" title="JavaScript"/></code>
+	<code><img width="40" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/python.svg" alt="Python" title="Python"/></code>
+  <code><img width="30" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/django.svg" alt="Django" title="Django"/></code>
 </div><br>
 <div align="left">
-	<code>Git<img width="80" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/git.svg" alt="Git" title="Git"/></code>
-	<code>GitHub<img width="40" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/github-icon.svg" alt="GitHub" title="GitHub"/></code>
+	<code><img width="80" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/git.svg" alt="Git" title="Git"/></code>
+	<code><img width="40" src="https://raw.githubusercontent.com/tomchen/stack-icons/master/logos/github-icon.svg" alt="GitHub" title="GitHub"/></code>
 </div>
 
 ## Brief
@@ -35,20 +35,28 @@ During the planning we also decided that we would be working with a mix of pair/
 - Implement authorization by restricting access to the Creation, Updating & Deletion of data resources.
 
 ## Planning
-
+During the planning phase, we thought about the delegation of tasks across the team, too. [Angelica Sandrini](https://github.com/gellisun) volunteered to be GitHub master, controlling the pull requests from the rest of the team and sorting out merge conflicts as and when they arose. [Lucas Neno](https://github.com/casneno) took charge of the location API, as you will see a bit further down below. [Hannah Curran](https://github.com/hannahcurran) and I worked together on a few functionalities, of which one was the ability to upload and add a profile picture. We all worked on various CSS features, too.
 ### Brainstorming
+We decided to use [lucid.com](https://www.lucidchart.com/pages/) to brainstorm all sorts of ideas using a notes chart/brainstorming pad. We used this for a variety of functions, including the app idea, the name and what functionality we would like it to achieve. Each member of the team contributed, and then we took a vote on our favourite ideas.
+
 ![Initial brainstorming on the project](/main_app/static/images/README/Brainstorming.png "Initial brainstorming on the project")
 ### Wireframe
+For the wireframe, again, we used [lucid.com](https://www.lucidchart.com/pages/), where we all contributed to create the mobile-first design as you see below. The idea behind this is self-explanatory - most users of the web browse with their phones, and so we wanted to create our app using mobile-first design.
+
 ![Mobile](/main_app/static/images/README/mobile-wireframe.png "Wireframe for mobile")<br>
+
+After we had created the wireframe for the mobile first design, we moved onto the browser page section, where we would ultimately use media queries to achieve the look of this wireframe. You can see screenshots of this, below.
 
 ![Web](/main_app/static/images/README/web-wireframe.png "Wireframe for web")
 ### ERD
+Again, we used [lucid.com](https://www.lucidchart.com/pages/) to create the ERD as seen below.
+
 ![ERD](/main_app/static/images/README/erd.png "ERD")
 
 ## Code Process
 
-I took care of the profile creation and the biggest challenge was at first to understand how to make a 1:1 relationship work.
-This and the CSS were the bits where I was most involved in.
+I worked a little bit of paired programming with [Angelica Sandrini](https://github.com/gellisun) and we tried to take care of the profile creation. The biggest challenge we faced with this was at first to understand how to make a 1:1 relationship work.
+This and the CSS were the bits where I was most involved in, namely on the home/landing pages and also on the login page.
 
 ```Python
 @login_required
@@ -159,7 +167,6 @@ def find_match(request, profile_id):
 ```
 
 ## Challenges
-My main challenge and biggest failure was the fact that I tried hard but didn't manage to add an in-place-edit functionality with JavaScript.
 The most time consuming challenge we faced as a team was pulling down from the main remote repo after major changes and functionalities were made. Also, as the functionalities we wanted to implement were different from what we did during class and labs, that meant that we all had to go through a lot of documentation in order to implement them, causing us to use a lot of our time studying.
 
 ## Wins
@@ -168,9 +175,9 @@ Throughout our group project, we accomplished some important goals as a team. We
 To work as part of a team who all had a positive attitude despite the challenges.
 
 ## Key Learnings
-We all can say we learnt a lot about Git and GitHub collaboration after all the hours we spent on it :laughing:.
-I personaly learned the significance of clear communication and division of tasks, that could help us stay organized and efficient. Additionally, tackling real-world challenges, such as integrating authentication, an API and balancing front-end aesthetics with back-end functionality, enhanced our technical skills in different ways.
-Using our base knowledge of Django/Python that we learned about in our classroom lessons, but also using documentation from the Internet to allow us to implement features that we have not learned about before.
+We all can say we learnt a lot about Git and GitHub collaboration, as we found the workflow around this difficult as it was very new to us all.
+Additionally, tackling real-world challenges, such as integrating authentication, an API and balancing front-end aesthetics with back-end functionality, enhanced our technical skills in different ways.
+Also, using our base knowledge of Django/Python that we learned about in our classroom lessons, but also using documentation from the Internet to allow us to implement features that we have not learned about before.
 
 ## Future Improvements
 - At the moment there’s a bug with the photo upload (it uploads to all users and once uploaded cannot be changed) and the comments are not linked to the profile for which they are added.
